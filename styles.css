@@ -611,6 +611,8 @@ body.is-scrolled .site-header {
 }
 
 .nav-toggle {
+  position: relative;
+  z-index: 1;
   display: none;
   width: 3rem;
   height: 3rem;
@@ -1530,6 +1532,7 @@ body.is-scrolled .site-header {
 
   .site-header {
     border-radius: 1.5rem;
+    overflow: visible;
   }
 
   .nav-toggle {
