@@ -801,6 +801,85 @@ body.is-scrolled .site-header {
   color: var(--text);
 }
 
+.button-download {
+  border-color: rgba(0, 103, 192, 0.28);
+  background: linear-gradient(135deg, rgba(0, 103, 192, 0.16), rgba(76, 194, 255, 0.24));
+  color: var(--primary-deep);
+  box-shadow:
+    0 14px 28px rgba(0, 103, 192, 0.14),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+}
+
+.button-download:hover,
+.button-download:focus-visible {
+  border-color: rgba(0, 103, 192, 0.42);
+}
+
+.button-download::after {
+  content: "PDF";
+  margin-left: 0.6rem;
+  padding: 0.18rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--primary-deep);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
+
+.nav-download-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.65rem 0.95rem;
+  border: 1px solid rgba(0, 103, 192, 0.22);
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(0, 103, 192, 0.12), rgba(76, 194, 255, 0.2));
+  color: var(--primary-deep);
+  box-shadow: 0 12px 24px rgba(0, 103, 192, 0.1);
+}
+
+.nav-download-link::after {
+  content: "PDF";
+  position: static;
+  width: auto;
+  height: auto;
+  transform: none;
+  background: rgba(255, 255, 255, 0.52);
+  padding: 0.16rem 0.42rem;
+  border-radius: 999px;
+  color: var(--primary-deep);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  line-height: 1;
+}
+
+.site-nav a.nav-download-link::before {
+  inset: 0;
+  opacity: 1;
+  background: linear-gradient(135deg, rgba(0, 103, 192, 0.1), rgba(76, 194, 255, 0.18));
+}
+
+.site-nav a.nav-download-link:hover,
+.site-nav a.nav-download-link:focus-visible {
+  color: var(--primary-deep);
+  border-color: rgba(0, 103, 192, 0.34);
+}
+
+.site-nav a.nav-download-link:hover::after,
+.site-nav a.nav-download-link:focus-visible::after {
+  transform: none;
+}
+
+.footer-download-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(0, 103, 192, 0.1);
+  border: 1px solid rgba(0, 103, 192, 0.16);
+}
+
 .quick-facts {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1561,6 +1640,12 @@ body.is-scrolled .site-header {
   .site-nav a {
     width: 100%;
     padding: 0.3rem 0;
+  }
+
+  .nav-download-link {
+    justify-content: center;
+    width: 100%;
+    padding: 0.8rem 1rem;
   }
 
   .site-nav.is-open {
