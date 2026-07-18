@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="A Windows, .NET, and networking focused portfolio built with HTML, CSS, and JavaScript."
+      content="Bhathiya Bandara — Software Engineer focused on .NET, Windows applications, and FinTech systems."
     />
-    <title>Bhathiya Bandara</title>
+    <title>Bhathiya Bandara — Software Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700;800&family=Playfair+Display:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <script>
@@ -31,20 +31,22 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="cursor-dot" aria-hidden="true"></div>
-    <div class="cursor-ring" aria-hidden="true"></div>
+    <div class="bg-scene" aria-hidden="true">
+      <div class="bg-orb bg-orb-a"></div>
+      <div class="bg-orb bg-orb-b"></div>
+    </div>
+
     <div class="scroll-progress" aria-hidden="true">
       <span class="scroll-progress-bar"></span>
     </div>
+
     <aside class="contact-dock" aria-label="Quick contact links">
       <a
         class="contact-dock-link whatsapp"
-        data-label="WhatsApp"
         href="https://wa.me/94710591575"
         target="_blank"
         rel="noreferrer"
         aria-label="Chat on WhatsApp"
-        title="WhatsApp"
       >
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path
@@ -54,12 +56,10 @@
       </a>
       <a
         class="contact-dock-link linkedin"
-        data-label="LinkedIn"
         href="https://www.linkedin.com/in/bhathiya-bandara/"
         target="_blank"
         rel="noreferrer"
         aria-label="Open LinkedIn profile"
-        title="LinkedIn"
       >
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path
@@ -69,48 +69,34 @@
       </a>
       <a
         class="contact-dock-link gmail"
-        data-label="Email"
         href="mailto:bhathiya.rb@gmail.com"
         aria-label="Send an email"
-        title="Gmail"
-        >
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M3.75 5.5h16.5A1.25 1.25 0 0 1 21.5 6.75v10.5A1.25 1.25 0 0 1 20.25 18.5H3.75A1.25 1.25 0 0 1 2.5 17.25V6.75A1.25 1.25 0 0 1 3.75 5.5Zm.37 1.78 7.6 5.54a.5.5 0 0 0 .56 0l7.6-5.54H4.12Zm15.88 1.14-6.82 4.97a2 2 0 0 1-2.36 0L4 8.42v8.83c0 .14.11.25.25.25h15.5c.14 0 .25-.11.25-.25V8.42Z"
-            />
-          </svg>
-        </a>
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M3.75 5.5h16.5A1.25 1.25 0 0 1 21.5 6.75v10.5A1.25 1.25 0 0 1 20.25 18.5H3.75A1.25 1.25 0 0 1 2.5 17.25V6.75A1.25 1.25 0 0 1 3.75 5.5Zm.37 1.78 7.6 5.54a.5.5 0 0 0 .56 0l7.6-5.54H4.12Zm15.88 1.14-6.82 4.97a2 2 0 0 1-2.36 0L4 8.42v8.83c0 .14.11.25.25.25h15.5c.14 0 .25-.11.25-.25V8.42Z"
+          />
+        </svg>
+      </a>
     </aside>
-    <div class="page-shell">
-      <header class="site-header">
-        <a class="brand" href="#top">
-          <span class="brand-mark">BB</span>
-          <span class="brand-text">
-            <h2>Bhathiya Bandara</h2>
-          </span>
-        </a>
 
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="site-nav"
-          aria-label="Open navigation"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+    <header class="site-header">
+      <a class="brand" href="#top">
+        <span class="brand-name">
+          <span>භාතිය</span>
+          <span class="brand-surname">අකලංක</span>
+        </span>
+      </a>
 
-        <nav class="site-nav" id="site-nav">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a class="nav-download-link" href="images/BhathiyaCV.pdf" download>Download CV</a>
-          <a href="#contact">Contact</a>
-        </nav>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
+      <div class="header-actions">
         <button
           class="theme-toggle"
           type="button"
@@ -118,310 +104,318 @@
           aria-pressed="false"
           title="Toggle light and dark mode"
         >
-          <span class="theme-toggle-track">
-            <span class="theme-toggle-icon theme-toggle-sun" aria-hidden="true">
-              <span></span>
-            </span>
-            <span class="theme-toggle-icon theme-toggle-moon" aria-hidden="true">
-              <span></span>
-            </span>
-            <span class="theme-toggle-thumb"></span>
-          </span>
+          <span class="theme-icon theme-sun" aria-hidden="true"></span>
+          <span class="theme-icon theme-moon" aria-hidden="true"></span>
         </button>
-      </header>
+        <a class="nav-cv" href="images/BhathiyaCV.pdf" download>CV</a>
+      </div>
+    </header>
 
-      <main id="top">
-        <section class="hero section">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">Hello World!</p>
-            <h1>Building reliable software with discipline, smart and purpose.</h1>
-            <div class="hero-intro">
-              <p class="hero-text">
-                Hi, I’m Bhathiya Bandara, a Software Engineer with a strong focus
-                on innovation, continuous learning, and meaningful technical
-                contribution. My journey as a student, programmer, and baseball
-                player has shaped the way I work with discipline, teamwork,
-                leadership, and problem-solving at the center.
+    <main id="top">
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true">
+          <img src="images/hero.png" alt="" />
+          <div class="hero-media-shade"></div>
+        </div>
+
+        <div class="hero-content">
+          <p class="hero-brand reveal">Bhathiya Bandara</p>
+          <h1 class="reveal">
+            Software Engineer building reliable FinTech systems.
+          </h1>
+          <p class="hero-lead reveal">
+            Building software that solves real problems — growing with AI from developer to software engineer, based in Kandy, Sri Lanka.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#contact">Get in touch</a>
+            <a class="button button-ghost" href="#projects">View work</a>
+            <a class="button button-ghost" href="images/BhathiyaCV.pdf" download>Download CV</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="page-shell">
+        <section class="section about-section" id="about">
+          <div class="section-label reveal">About</div>
+          <div class="about-layout">
+            <div class="about-copy reveal">
+              <h2>Technology that solves real problems for real people.</h2>
+              <p>
+                Hi, I’m Bhathiya Bandara, a Software Engineer who believes technology
+                is most valuable when it solves real problems for real people.
               </p>
-              <p class="hero-text">
-                I began my career as a Software Developer Trainee at Ceylon
-                Petroleum Corporation, where I gained hands-on experience in
-                building software systems and collaborating with teams to deliver
-                practical solutions.
+              <p>
+                Everything in the digital world starts with just two numbers: 0 and 1.
+                It’s fascinating that something so simple can be transformed into
+                applications that help businesses, simplify everyday tasks, and
+                improve people’s lives.
               </p>
-              <p class="hero-text">
-                I currently work as a Software Engineer at PayMedia (Pvt)
-                Limited, contributing to FinTech solutions with technologies
-                including <strong>.NET</strong>, <strong>C#</strong>,
-                <strong>WPF</strong>, <strong>Git</strong>,
-                <strong>Vue.js</strong>, <strong>Laravel</strong>, <strong>Server deployments</strong> and
-                <strong>Cloud Services</strong>.
+              <p>
+                My goal is to build software solutions that create a meaningful impact
+                on society. Whether they are financial applications, business
+                solutions, or community-focused platforms, I want my work to make
+                technology more accessible, reliable, and useful for everyone.
+              </p>
+              <p>
+                The most rewarding part of my career is knowing that someone trusts
+                and relies on an application I’ve built. Seeing people accomplish
+                their work more easily, save time, or solve a problem through software
+                I’ve developed is what motivates me to keep learning, improving, and
+                creating better solutions every day.
               </p>
             </div>
 
-            <ul class="hero-points">
-              <li>Designing and maintaining software for banking CDM kiosks</li>
-              <li>Developing backend systems for eKYC solutions</li>
-              <li>Supporting server deployment, intern training, and knowledge sharing</li>
-              <li>Exploring emerging technologies to stay ahead in a fast-moving industry</li>
-            </ul>
+            <aside class="about-aside reveal">
+              <div class="aside-block">
+                <h3>Education</h3>
+                <div class="aside-item">
+                  <strong>University of Colombo</strong>
+                  <span>BSc (Hons) Electronics &amp; IT · 2019–2023</span>
+                  <span>GPA 3.50 · Second Upper Class</span>
+                </div>
+                <div class="aside-item">
+                  <strong>St. Sylvester’s College</strong>
+                  <span>Physical Sciences · 2013–2016</span>
+                  <span>GCE A/L · z-score 1.416</span>
+                </div>
+              </div>
 
-            <p class="hero-text hero-closing">
-              I enjoy building reliable, scalable, and impactful systems while
-              contributing to digital transformation in the financial services
-              space and continuing to grow as an engineer.
-            </p>
+              <div class="aside-block">
+                <h3>Recognition</h3>
+                <div class="aside-item">
+                  <strong>University Colours 2022</strong>
+                  <span>Baseball · University of Colombo · April 2023</span>
+                </div>
+              </div>
 
-            <div class="hero-actions">
-              <a class="button button-primary" href="#contact">Get in Touch</a>
-              <a class="button button-download" href="images/BhathiyaCV.pdf" download>
-                Download CV
-              </a>
-              <a class="button button-secondary" href="#projects">See Projects</a>
-            </div>
-
-            <ul class="quick-facts">
-              <li>
-                <strong>Location</strong>
-                <span>Kandy, Sri Lanka</span>
-              </li>
-              <li>
-                <strong>Email</strong>
-                <span>bhathiya.rb@gmail.com</span>
-              </li>
-              <li>
-                <strong>Focus</strong>
-                <span>Windows Apps</span>
-              </li>
-            </ul>
+              <div class="aside-block">
+                <h3>Beyond code</h3>
+                <ul>
+                  <li>Anime enthusiast — One Piece favorite</li>
+                  <li>University baseball player</li>
+                  <li>Tech writing on LinkedIn</li>
+                  <li>English &amp; Sinhalese</li>
+                </ul>
+              </div>
+            </aside>
           </div>
 
-          <aside class="hero-card reveal">
-            <div class="profile-badge">Software Engineer</div>
-            <div class="profile-photo-showcase">
-              <div class="profile-photo-frame">
-                <img
-                  class="profile-photo"
-                  src="images/hero.png"
-                  alt="Portrait of Bhathiya Bandara"
-                />
-              </div>
+          <aside class="personality reveal" aria-labelledby="personality-title">
+            <div class="personality-intro">
+              <p class="personality-kicker">Personality</p>
+              <h3 id="personality-title">Debater · ENTP-T</h3>
+              <p>
+                Curious and flexible thinker who thrives on intellectual challenge —
+                bold, creative, and quick to deconstruct ideas and rebuild them with
+                mental agility.
+              </p>
+              <a
+                class="personality-link"
+                href="https://www.16personalities.com/entp-personality"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Learn about ENTP-T
+              </a>
             </div>
-            <h2>Bhathiya Bandara</h2>
-            <p>Software Engineer @PayMedia | BSc (Hons) in Electronics & IT (Colombo) | Fin-Tech | Software Architecture Enthusiast | Blogger</p>
-            <div class="hero-card-meta">
-              <div>
-                <span>Experience</span>
-                <strong>3+ Years</strong>
-              </div>
-              <div>
-                <span>Core Stack</span>
-                <strong>C#, .NET</strong>
-              </div>
-            </div>
+
+            <ul class="trait-list">
+              <li>
+                <div class="trait-head">
+                  <span>Mind</span>
+                  <strong>52% Extraverted</strong>
+                </div>
+                <div class="trait-track" aria-hidden="true">
+                  <span class="trait-fill trait-mind" style="--value: 52%"></span>
+                </div>
+              </li>
+              <li>
+                <div class="trait-head">
+                  <span>Energy</span>
+                  <strong>88% Intuitive</strong>
+                </div>
+                <div class="trait-track" aria-hidden="true">
+                  <span class="trait-fill trait-energy" style="--value: 88%"></span>
+                </div>
+              </li>
+              <li>
+                <div class="trait-head">
+                  <span>Nature</span>
+                  <strong>61% Thinking</strong>
+                </div>
+                <div class="trait-track" aria-hidden="true">
+                  <span class="trait-fill trait-nature" style="--value: 61%"></span>
+                </div>
+              </li>
+              <li>
+                <div class="trait-head">
+                  <span>Tactics</span>
+                  <strong>58% Prospecting</strong>
+                </div>
+                <div class="trait-track" aria-hidden="true">
+                  <span class="trait-fill trait-tactics" style="--value: 58%"></span>
+                </div>
+              </li>
+              <li>
+                <div class="trait-head">
+                  <span>Identity</span>
+                  <strong>85% Turbulent</strong>
+                </div>
+                <div class="trait-track" aria-hidden="true">
+                  <span class="trait-fill trait-identity" style="--value: 85%"></span>
+                </div>
+              </li>
+            </ul>
           </aside>
         </section>
 
-        <section class="section about-grid" id="about">
-          <div class="section-heading reveal">
-            <p class="eyebrow">About Me</p>
-            <div class="about-intro">
-              <div class="detail-block about-highlight">
-                <ul class="inline-detail-list">
-                  <li>Anime lover, with <strong>One Piece</strong> as a favorite</li>
-                  <li>Played baseball at university level and enjoy team sports</li>
-                  <li>Like writing tech articles and sharing ideas on LinkedIn</li>
-                  <li>Enjoy reading books and learning from different fields</li>
-                </ul>
+        <section class="section ai-section" id="ai">
+          <div class="section-label reveal">Growth with AI</div>
+          <h2 class="section-title reveal">AI didn’t replace me — it upgraded me.</h2>
+
+          <div class="ai-panel reveal">
+            <div class="ai-copy">
+              <p class="ai-lead">
+                Working with AI has been one of the most positive shifts in my career.
+                It helped me move from writing code as a developer to thinking like a
+                software engineer — with clearer architecture, better decisions, and
+                stronger ownership of the full solution.
+              </p>
+              <p>
+                AI accelerates research, debugging, and learning. That frees me to focus
+                on what matters most: understanding real problems, designing reliable
+                systems, and delivering software people can trust. It puts me in a
+                better place every day — curious, confident, and ready to build better.
+              </p>
+            </div>
+
+            <div class="ai-path" aria-label="Career growth path">
+              <div class="ai-step">
+                <span class="ai-step-tag">Before</span>
+                <strong>Developer</strong>
+                <span>Writing features and fixing issues</span>
+              </div>
+              <div class="ai-arrow" aria-hidden="true"></div>
+              <div class="ai-step ai-step-highlight">
+                <span class="ai-step-tag">With AI</span>
+                <strong>Software Engineer</strong>
+                <span>Designing systems that create impact</span>
               </div>
             </div>
           </div>
-          <div class="content-card reveal">
-            <div class="about-stack">
-              <div class="detail-block">
-                <p class="detail-label">Education</p>
-                <div class="timeline-mini">
-                  <div class="timeline-mini-item">
-                    <strong>University of Colombo</strong>
-                    <span>Bachelor's Degree (Honours), Electronics and IT</span>
-                    <span>January 2019 - May 2023</span>
-                    <span>Grade: 3.50 GPA, Second Upper Class</span>
-                    <span>
-                      Activities: Baseball team, Astronomical Society, Leo Club,
-                      Student's Computer Lounge, and Library
-                    </span>
-                  </div>
 
-                  <div class="timeline-mini-item">
-                    <strong>St. Sylvester's College</strong>
-                    <span>Physical Sciences</span>
-                    <span>2013 - 2016</span>
-                    <span>
-                      Grade: ABC with 1.416 z-score, GCE Advanced Level in Sri Lanka
-                    </span>
-                    <span>
-                      Activities: Science Society and Association of Psychology
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="detail-block">
-                <p class="detail-label">Recognition</p>
-                <div class="timeline-mini-item">
-                  <strong>University Colours 2022</strong>
-                  <span>Issued by University of Colombo, Sri Lanka - April 2023</span>
-                  <span>
-                    Awarded as an alma mater tribute for loyalty and performance in
-                    baseball during 2022, including Inter University Games 2022
-                    second runners-up recognition.
-                  </span>
-                </div>
-              </div>
-
-              <div class="detail-block">
-                <p class="detail-label">Languages</p>
-                <ul class="inline-detail-list">
-                  <li><strong>English</strong> - Professional working proficiency</li>
-                  <li><strong>Sinhalese</strong> - Native or bilingual proficiency</li>
-                </ul>
-              </div>
-
-            </div>
+          <div class="ai-grid">
+            <article class="ai-card reveal">
+              <span class="ai-card-num">01</span>
+              <h3>Faster learning loops</h3>
+              <p>
+                I explore new ideas quicker, validate approaches sooner, and turn
+                curiosity into working solutions with more confidence.
+              </p>
+            </article>
+            <article class="ai-card reveal">
+              <span class="ai-card-num">02</span>
+              <h3>Stronger engineering mindset</h3>
+              <p>
+                Beyond syntax, I focus on architecture, reliability, and the people
+                who will depend on the product every day.
+              </p>
+            </article>
+            <article class="ai-card reveal">
+              <span class="ai-card-num">03</span>
+              <h3>Better place to grow</h3>
+              <p>
+                AI keeps me motivated and moving forward — continuously improving,
+                shipping smarter, and enjoying the craft of software.
+              </p>
+            </article>
           </div>
         </section>
 
         <section class="section" id="focus">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Focus Areas</p>
-            <h2>The areas where I bring the most value.</h2>
-          </div>
-
-          <div class="focus-grid">
-            <article class="focus-card reveal">
-              <span class="focus-index">01</span>
-              <h3>Windows Application Development</h3>
-              <p>
-                Building practical desktop tools, internal systems, and user-focused
-                applications that support real operational work.
-              </p>
+          <div class="section-label reveal">Focus</div>
+          <h2 class="section-title reveal">Where I bring the most value.</h2>
+          <div class="focus-list">
+            <article class="focus-item reveal">
+              <span class="focus-num">01</span>
+              <div>
+                <h3>Windows Application Development</h3>
+                <p>
+                  Practical desktop tools and operational systems with clear UX
+                  and reliable day-to-day performance.
+                </p>
+              </div>
             </article>
-
-            <article class="focus-card reveal">
-              <span class="focus-index">02</span>
-              <h3>.NET Systems And Automation</h3>
-              <p>
-                Developing structured .NET solutions, connected workflows, and
-                automation that reduce manual effort and improve reliability.
-              </p>
+            <article class="focus-item reveal">
+              <span class="focus-num">02</span>
+              <div>
+                <h3>.NET Systems &amp; Automation</h3>
+                <p>
+                  Structured .NET solutions and connected workflows that reduce
+                  manual effort and improve reliability.
+                </p>
+              </div>
             </article>
-
-            <article class="focus-card reveal">
-              <span class="focus-index">03</span>
-              <h3>Networking And Process Improvement</h3>
-              <p>
-                Supporting stable systems through troubleshooting, monitoring,
-                infrastructure awareness, and clearer technical processes.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section" id="certifications">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Licenses &amp; Certifications</p>
-            <h2>Professional learning, certifications, and recognized achievements.</h2>
-          </div>
-
-          <div class="certification-grid">
-            <article class="certification-card reveal">
-              <span class="focus-index">01</span>
-              <h3>HCCDA - Tech Essentials</h3>
-              <p>Huawei</p>
-              <span class="certification-date">Issued January 2025 · Expires January 2028</span>
-              <span class="certification-id">Credential ID: HWDCTEDA527623</span>
-            </article>
-
-            <article class="certification-card reveal">
-              <span class="focus-index">02</span>
-              <h3>Oracle Database Foundations</h3>
-              <p>LearnQuest</p>
-              <span class="certification-date">Issued January 2025</span>
-              <span class="certification-id">Credential ID: TFH3GNER20HH</span>
-            </article>
-
-            <article class="certification-card reveal">
-              <span class="focus-index">03</span>
-              <h3>Diploma Certificate in English</h3>
-              <p>British Way English Academy</p>
-              <span class="certification-date">Issued January 2018</span>
-            </article>
-
-            <article class="certification-card reveal">
-              <span class="focus-index">04</span>
-              <h3>Certificate of Completion in the Practical Training in Tamil</h3>
-              <p>Department of Official Language, Sri Lanka</p>
-              <span class="certification-date">Issued January 2019</span>
+            <article class="focus-item reveal">
+              <span class="focus-num">03</span>
+              <div>
+                <h3>Networking &amp; Process</h3>
+                <p>
+                  Stable systems through troubleshooting, infrastructure awareness,
+                  and clearer technical processes.
+                </p>
+              </div>
             </article>
           </div>
         </section>
 
-        <section class="section timeline-section" id="experience">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Experience</p>
-            <h2>Experience across applications, systems support, and delivery process.</h2>
-          </div>
+        <section class="section" id="experience">
+          <div class="section-label reveal">Experience</div>
+          <h2 class="section-title reveal">Roles across delivery, systems, and leadership.</h2>
 
           <div class="timeline">
             <article class="timeline-item reveal">
-              <div class="timeline-date">Jul 2025 - Present</div>
-              <div class="content-card">
+              <time datetime="2025-07">Jul 2025 — Present</time>
+              <div class="timeline-body">
                 <h3>Software Engineer</h3>
-                <p class="muted">PayMedia · Full-time · Colombo, Western Province, Sri Lanka · On-site</p>
+                <p class="meta">PayMedia · Full-time · Colombo · On-site</p>
                 <p>
-                  Driving end-to-end software development initiatives while
-                  managing projects, mentoring interns, and guiding
-                  cross-functional teams. Focused on delivering scalable,
-                  high-performance applications and maintaining best practices in
-                  design, architecture, and delivery.
+                  Driving end-to-end software initiatives while managing projects,
+                  mentoring interns, and guiding cross-functional teams toward
+                  scalable, high-performance applications.
                 </p>
-                <p class="muted">
-                  C# · .NET Core · WPF · PHP (Laravel) · SQL · Git · REST API · Vue.js
-                  · ISO 8583 · On-Prem Server Deployment · Software Architecture ·
-                  Project Management · Team Leadership
+                <p class="stack">
+                  C# · .NET Core · WPF · Laravel · SQL · Git · REST · Vue.js ·
+                  ISO 8583 · On-Prem Deployment · Architecture · Leadership
                 </p>
               </div>
             </article>
 
             <article class="timeline-item reveal">
-              <div class="timeline-date">Jul 2023 - Jul 2025</div>
-              <div class="content-card">
+              <time datetime="2023-07">Jul 2023 — Jul 2025</time>
+              <div class="timeline-body">
                 <h3>Associate Software Engineer</h3>
-                <p class="muted">PayMedia · Full-time · Colombo, Western Province, Sri Lanka · On-site</p>
+                <p class="meta">PayMedia · Full-time · Colombo · On-site</p>
                 <p>
-                  Specialized in developing and maintaining CDM applications
-                  with a WPF frontend and Laravel backend, while also
-                  contributing to VTM applications using WPF and .NET Core.
-                  Additionally worked on backend development for eKYC
-                  solutions.
+                  Developed and maintained CDM applications with WPF and Laravel,
+                  contributed to VTM apps with WPF and .NET Core, and built
+                  backend services for eKYC solutions.
                 </p>
-                <p class="muted">
-                  C# · PHP · SQL · Git · OOP · SOLID · REST API · .NET · WPF ·
+                <p class="stack">
+                  C# · PHP · SQL · Git · OOP · SOLID · REST · .NET · WPF ·
                   ISO 8583 · ACS · Vue.js
                 </p>
               </div>
             </article>
 
             <article class="timeline-item reveal">
-              <div class="timeline-date">Dec 2022 - Jun 2023</div>
-              <div class="content-card">
+              <time datetime="2022-12">Dec 2022 — Jun 2023</time>
+              <div class="timeline-body">
                 <h3>Software Developer Intern</h3>
-                <p class="muted">IT Function, Head Office, Ceylon Petroleum Corporation · Internship · Colombo, Western Province, Sri Lanka</p>
+                <p class="meta">Ceylon Petroleum Corporation · Internship · Colombo</p>
                 <p>
-                  Collaborated with team members on projects and assignments
-                  while gaining hands-on experience with C#, VB, and Microsoft
-                  SQL Server. Strengthened problem-solving and analytical
-                  thinking through practical software development work.
+                  Collaborated on projects with C#, VB, and Microsoft SQL Server,
+                  strengthening problem-solving through practical delivery work.
                 </p>
               </div>
             </article>
@@ -429,185 +423,200 @@
         </section>
 
         <section class="section" id="projects">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Projects</p>
-            <h2>Projects in desktop tooling, automation, and infrastructure support.</h2>
-          </div>
+          <div class="section-label reveal">Projects</div>
+          <h2 class="section-title reveal">Selected work across FinTech, utilities, and hardware.</h2>
 
           <div class="project-grid">
-            <article class="project-card reveal">
+            <article class="project-item reveal">
               <img
-                class="project-image"
                 src="images/pg10.png"
-                alt="Preview of CDM application development project"
+                alt="CDM application development project"
               />
-              <span class="project-tag">PayMedia</span>
-              <h3>CDM Application Development</h3>
-              <p>
-                I actively contribute to the development and maintenance of CDM
-                applications across WPF, Laravel, Vue.js, and .NET. My work also
-                includes server-side logic implementation and internal portal
-                administration that supports CDM operations.
-              </p>
+              <div class="project-body">
+                <span class="project-tag">PayMedia</span>
+                <h3>CDM Application Development</h3>
+                <p>
+                  Development and maintenance of CDM applications across WPF,
+                  Laravel, Vue.js, and .NET — including server-side logic and
+                  internal portal administration.
+                </p>
+              </div>
             </article>
 
-            <article class="project-card reveal">
+            <article class="project-item reveal">
               <img
-                class="project-image"
                 src="images/pg3.png"
-                alt="Preview of LinkedIn blogging project"
+                alt="LinkedIn daily learning blog"
               />
-              <span class="project-tag">Personal Blogs | LinkedIn</span>
-              <h3>Daily Learning Blog</h3>
-              <p>
-                I maintain a learning blog where I share my experiences,
-                technical lessons, and daily learning journey with the aim of
-                helping and inspiring others.
-              </p>
-              <a href="https://linkedin.com/in/bhathiya-bandara" aria-label="Open LinkedIn blog">View Project</a>
+              <div class="project-body">
+                <span class="project-tag">LinkedIn</span>
+                <h3>Daily Learning Blog</h3>
+                <p>
+                  A learning blog sharing technical lessons and day-to-day
+                  engineering experiences to help and inspire others.
+                </p>
+                <a href="https://linkedin.com/in/bhathiya-bandara" target="_blank" rel="noreferrer">
+                  View on LinkedIn
+                </a>
+              </div>
             </article>
 
-            <article class="project-card reveal">
+            <article class="project-item reveal">
               <img
-                class="project-image"
                 src="images/pg6.png"
-                alt="Preview of personal application collection"
+                alt="Personal application collection"
               />
-              <span class="project-tag">Utility Apps</span>
-              <h3>Personal Application Collection</h3>
-              <p>
-                A collection of applications I created for personal use,
-                including a word counter for research writing, a fun dinosaur
-                game, and a number converter designed to teach numbers using C#
-                and .NET.
-              </p>
-              <a href="https://github.com/bhathi97" aria-label="Open GitHub projects">View Project</a>
+              <div class="project-body">
+                <span class="project-tag">Utilities</span>
+                <h3>Personal Application Collection</h3>
+                <p>
+                  Apps built for personal use — a research word counter, a dinosaur
+                  game, and a number converter in C# and .NET.
+                </p>
+                <a href="https://github.com/bhathi97" target="_blank" rel="noreferrer">
+                  View on GitHub
+                </a>
+              </div>
             </article>
 
-            <article class="project-card reveal">
+            <article class="project-item reveal">
               <img
-                class="project-image"
                 src="images/pg8.png"
-                alt="Preview of 8x8x8 LED cube display project"
+                alt="8x8x8 LED cube display"
               />
-              <span class="project-tag">Embedded Systems</span>
-              <h3>8x8x8 LED Cube Display</h3>
-              <p>
-                Built an 8x8x8 LED cube with 512 LEDs using C, AVR Studio,
-                ATmega32, USBasp, and an ATmega32 development board, combining
-                hardware control with low-level programming.
-              </p>
+              <div class="project-body">
+                <span class="project-tag">Embedded</span>
+                <h3>8×8×8 LED Cube Display</h3>
+                <p>
+                  An 8×8×8 LED cube with 512 LEDs using C, AVR Studio, ATmega32,
+                  and USBasp — hardware control meets low-level programming.
+                </p>
+              </div>
             </article>
           </div>
         </section>
 
-        <section class="section stats-section">
-          <div class="stats-card reveal">
+        <section class="section stats-section" aria-label="Highlights">
+          <div class="stat reveal">
             <strong>10+</strong>
-            <span>Personal Projects</span>
+            <span>Personal projects</span>
           </div>
-          <div class="stats-card reveal">
+          <div class="stat reveal">
             <strong>9+</strong>
-            <span>Industrial Applications</span>
+            <span>Industrial apps</span>
           </div>
-          <div class="stats-card reveal">
+          <div class="stat reveal">
             <strong>3+</strong>
             <span>Years with .NET</span>
           </div>
-          <div class="stats-card reveal">
+          <div class="stat reveal">
             <strong>24/7</strong>
-            <span>Systems Mindset</span>
+            <span>Systems mindset</span>
           </div>
         </section>
 
         <section class="section" id="skills">
-          <div class="content-card reveal">
-            <p class="eyebrow">Skills</p>
-            <h2>Core stack</h2>
-            <div class="chip-group">
-              <span>C#</span>
-              <span>Windows Presentation Foundation (WPF)</span>
-              <span>ASP.NET Core</span>
-              <span>SQL Server (MySQL / MsSQL)</span>
-              <span>REST APIs</span>
-              <span>Port Programming</span>
-              <span>Networking</span>
-              <span>Troubleshooting</span>
-              <span>GitHub</span>
-              <span>Azure Communication Services</span>
-              <span>Vue.js</span>
-              <span>Laravel</span>
-              <span>Software Architecture</span>
-              <span>People Management</span>
-            </div>
+          <div class="section-label reveal">Skills</div>
+          <h2 class="section-title reveal">Core stack</h2>
+          <div class="skill-list reveal">
+            <span>C#</span>
+            <span>WPF</span>
+            <span>ASP.NET Core</span>
+            <span>SQL Server</span>
+            <span>REST APIs</span>
+            <span>AI-assisted Development</span>
+            <span>Port Programming</span>
+            <span>Networking</span>
+            <span>Troubleshooting</span>
+            <span>GitHub</span>
+            <span>Azure Communication Services</span>
+            <span>Vue.js</span>
+            <span>Laravel</span>
+            <span>Software Architecture</span>
+            <span>People Management</span>
           </div>
-
         </section>
 
-        <section class="section contact-section" id="contact">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Contact</p>
-            <h2>Reach out for collaboration, ideas, or technical conversation.</h2>
-          </div>
-
-          <div class="contact-panel reveal">
-            <div>
-              <p>
-                I’m always open to meaningful conversations around software
-                engineering, .NET development, Windows applications, and
-                technology-driven problem solving. Feel free to connect,
-                reach out, or follow my work through the links below.
-              </p>
-              <div class="contact-links">
-                <a href="mailto:bhathiya.rb@gmail.com">bhathiya.rb@gmail.com</a>
-                <a href="https://github.com/bhathi97">github.com/bhathi97</a>
-                <a href="https://www.linkedin.com/in/bhathiya-bandara/">
-                  linkedin.com/in/bhathiya-bandara
-                </a>
-              </div>
-            </div>
-
-            <a class="button button-primary" href="#top">Back to Top</a>
+        <section class="section" id="certifications">
+          <div class="section-label reveal">Certifications</div>
+          <h2 class="section-title reveal">Licenses and professional learning.</h2>
+          <div class="cert-list">
+            <article class="cert-item reveal">
+              <h3>HCCDA — Tech Essentials</h3>
+              <p>Huawei · Jan 2025 – Jan 2028</p>
+              <span>ID: HWDCTEDA527623</span>
+            </article>
+            <article class="cert-item reveal">
+              <h3>Oracle Database Foundations</h3>
+              <p>LearnQuest · Jan 2025</p>
+              <span>ID: TFH3GNER20HH</span>
+            </article>
+            <article class="cert-item reveal">
+              <h3>Diploma Certificate in English</h3>
+              <p>British Way English Academy · Jan 2018</p>
+            </article>
+            <article class="cert-item reveal">
+              <h3>Practical Training in Tamil</h3>
+              <p>Department of Official Language, Sri Lanka · Jan 2019</p>
+            </article>
           </div>
         </section>
 
         <section class="section" id="gallery">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Screens</p>
-            <h2>Add screenshots from apps, dashboards, infrastructure, and deployment work.</h2>
-          </div>
-
+          <div class="section-label reveal">Gallery</div>
+          <h2 class="section-title reveal">Screens from apps and systems work.</h2>
           <div class="gallery-grid">
-            <figure class="gallery-card reveal">
-              <img src="images/pg1.png"/>
+            <figure class="gallery-item reveal">
+              <img src="images/pg1.png" alt="Project screenshot 1" />
             </figure>
-            <figure class="gallery-card reveal">
-              <img src="images/pg2.png"/>
+            <figure class="gallery-item reveal">
+              <img src="images/pg2.png" alt="Project screenshot 2" />
             </figure>
-            <figure class="gallery-card reveal">
-              <img src="images/pg4.png"/>
+            <figure class="gallery-item reveal">
+              <img src="images/pg4.png" alt="Project screenshot 3" />
             </figure>
-            <figure class="gallery-card reveal">
-              <img src="images/pg5.png"/>
+            <figure class="gallery-item reveal">
+              <img src="images/pg5.png" alt="Project screenshot 4" />
             </figure>
           </div>
         </section>
-      </main>
 
-      <footer class="site-footer">
-        <div class="footer-copy">
-          <strong>Bhathiya Bandara</strong>
-          <span>2026</span>
-        </div>
-        <div class="footer-links">
-          <a class="footer-download-link" href="images/BhathiyaCV.pdf" download>Download CV</a>
-          <a href="mailto:bhathiya.rb@gmail.com">Email</a>
-          <a href="https://github.com/bhathi97">GitHub</a>
-          <a href="https://www.linkedin.com/in/bhathiya-bandara/">LinkedIn</a>
-          <a href="#top">Top</a>
-        </div>
-      </footer>
-    </div>
+        <section class="section contact-section" id="contact">
+          <div class="contact-panel reveal">
+            <div>
+              <div class="section-label">Contact</div>
+              <h2>Let’s talk about software, systems, or collaboration.</h2>
+              <p>
+                Open to conversations around .NET, Windows applications, FinTech,
+                and technology-driven problem solving.
+              </p>
+            </div>
+            <div class="contact-links">
+              <a href="mailto:bhathiya.rb@gmail.com">bhathiya.rb@gmail.com</a>
+              <a href="https://github.com/bhathi97" target="_blank" rel="noreferrer">github.com/bhathi97</a>
+              <a href="https://www.linkedin.com/in/bhathiya-bandara/" target="_blank" rel="noreferrer">
+                linkedin.com/in/bhathiya-bandara
+              </a>
+              <a class="button button-primary" href="images/BhathiyaCV.pdf" download>Download CV</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-copy">
+        <strong>Bhathiya Bandara</strong>
+        <span>© 2026</span>
+      </div>
+      <div class="footer-links">
+        <a href="images/BhathiyaCV.pdf" download>CV</a>
+        <a href="mailto:bhathiya.rb@gmail.com">Email</a>
+        <a href="https://github.com/bhathi97" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/bhathiya-bandara/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="#top">Top</a>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
