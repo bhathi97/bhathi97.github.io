@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700;800&family=Playfair+Display:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <script>
@@ -111,10 +111,20 @@
           aria-pressed="false"
           title="Toggle light and dark mode"
         >
-          <span class="theme-icon theme-sun" aria-hidden="true"></span>
-          <span class="theme-icon theme-moon" aria-hidden="true"></span>
+          <svg class="theme-icon theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke-linecap="round"/>
+          </svg>
+          <svg class="theme-icon theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5Z" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </button>
-        <a class="nav-cv" href="images/BhathiyaCV.pdf" download>CV</a>
+        <a class="nav-cv" href="images/BhathiyaCV.pdf" download>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M12 3v12M8 11l4 4 4-4M5 19h14" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          CV
+        </a>
       </div>
     </header>
 
@@ -122,7 +132,6 @@
       <section class="hero">
         <div class="hero-shell">
           <div class="hero-copy reveal">
-            <p class="hero-badge">Building scalable, secure &amp; intelligent solutions</p>
             <h1>
               Hi, I’m <span class="hero-name">Bhathiya Bandara</span>.
               I build software that solves
@@ -133,20 +142,52 @@
               growing with AI from developer to engineer, based in Kandy, Sri Lanka.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#projects">View my work</a>
-              <a class="button button-ghost" href="#about">About me</a>
+              <a class="button button-primary" href="#projects">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                View my work
+              </a>
+              <a class="button button-ghost" href="#about">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M20 21a8 8 0 0 0-16 0" stroke-linecap="round"/>
+                  <circle cx="12" cy="8" r="4"/>
+                </svg>
+                About me
+              </a>
             </div>
 
             <div class="hero-stack">
               <p class="hero-stack-label">Tech stack</p>
               <ul>
-                <li>C#</li>
-                <li>.NET</li>
-                <li>WPF</li>
-                <li>Vue.js</li>
-                <li>SQL</li>
-                <li>Laravel</li>
-                <li>Git</li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 18 22 12 16 6M8 6 2 12l6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span>C#</span>
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9" stroke-linecap="round"/></svg>
+                  <span>.NET</span>
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3" stroke-linecap="round"/></svg>
+                  <span>WPF</span>
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span>Vue.js</span>
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" stroke-linecap="round"/></svg>
+                  <span>SQL</span>
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v18M5 8h14M7 12h10M9 16h6" stroke-linecap="round"/></svg>
+                  <span>Laravel</span>
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><path d="M8.5 6.5 15.5 6.5M6 8.5v7M8.5 17.5h5a4 4 0 0 0 4-4V8.5" stroke-linecap="round"/></svg>
+                  <span>Git</span>
+                </li>
               </ul>
             </div>
           </div>
@@ -158,28 +199,32 @@
                 alt="Portrait of Bhathiya Bandara"
               />
             </div>
-            <p class="hero-quote">Code is the bridge between ideas and impact.</p>
           </aside>
         </div>
 
         <div class="hero-stats reveal">
           <div>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg>
             <strong>3+</strong>
             <span>Years of experience</span>
           </div>
           <div>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 20h16M6 20V10l6-4 6 4v10M10 20v-5h4v5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <strong>10+</strong>
             <span>Projects delivered</span>
           </div>
           <div>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3" stroke-linecap="round"/></svg>
             <strong>9+</strong>
             <span>Industrial apps</span>
           </div>
           <div>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8" stroke-linecap="round"/><circle cx="12" cy="12" r="3"/></svg>
             <strong>FinTech</strong>
             <span>Domain focus</span>
           </div>
           <div>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3a6 6 0 0 1 6 6c0 2.5-1.4 3.8-2.6 5-.9.9-1.4 1.6-1.4 2.7V18H10v-1.3c0-1.1-.5-1.8-1.4-2.7C7.4 12.8 6 11.5 6 9a6 6 0 0 1 6-6Z" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 21h4" stroke-linecap="round"/></svg>
             <strong>AI+</strong>
             <span>Always learning</span>
           </div>
@@ -389,7 +434,12 @@
           <h2 class="section-title reveal">Where I bring the most value.</h2>
           <div class="focus-list">
             <article class="focus-item reveal">
-              <span class="focus-num">01</span>
+              <span class="focus-icon" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="4" width="20" height="14" rx="2"/>
+                  <path d="M8 21h8M12 18v3" stroke-linecap="round"/>
+                </svg>
+              </span>
               <div>
                 <h3>Windows Application Development</h3>
                 <p>
@@ -399,7 +449,12 @@
               </div>
             </article>
             <article class="focus-item reveal">
-              <span class="focus-num">02</span>
+              <span class="focus-icon" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 3 3 8l9 5 9-5-9-5Z"/>
+                  <path d="m3 14 9 5 9-5M3 10l9 5 9-5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
               <div>
                 <h3>.NET Systems &amp; Automation</h3>
                 <p>
@@ -409,7 +464,12 @@
               </div>
             </article>
             <article class="focus-item reveal">
-              <span class="focus-num">03</span>
+              <span class="focus-icon" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke-linecap="round"/>
+                </svg>
+              </span>
               <div>
                 <h3>Networking &amp; Process</h3>
                 <p>
@@ -656,7 +716,12 @@
               <a href="https://www.linkedin.com/in/bhathiya-bandara/" target="_blank" rel="noreferrer">
                 linkedin.com/in/bhathiya-bandara
               </a>
-              <a class="button button-primary" href="images/BhathiyaCV.pdf" download>Download CV</a>
+              <a class="button button-primary" href="images/BhathiyaCV.pdf" download>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M12 3v12M8 11l4 4 4-4M5 19h14" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Download CV
+              </a>
             </div>
           </div>
         </section>
